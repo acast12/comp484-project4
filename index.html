@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CSUN Map Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+        <h1><span class="name">CSUN</span> Map Quiz</h1>
+
+        <div id="infoPanel">
+            <div id="status">
+                Loading map…
+            </div>
+            <div id="progress">
+                Location 0 of 5 | Score: 0
+            </div>
+            <div id="controls">
+                <button id="restartBtn">Restart Game</button>
+            </div>
+        </div>
+
+    <div id="map"></div>
+
+    <script src="index.js"></script>
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgX0QCG_YokEH-SW3TLZ1uBJ3YjZ9rDes&callback=initMap&libraries=geometry"
+    ></script>
+  </body>
+</html>
